@@ -17,7 +17,7 @@
                    "ErrorCode": 'value2',
                    "Description": 123
                  };
-                 window.ReactNativeWebView.postMessage(dataObject1);
+                 window.ReactNativeWebView.postMessage(JSON.stringify(dataObject1));
              }
      
              // You can also listen for messages from the parent WebView
