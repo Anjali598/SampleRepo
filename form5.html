@@ -22,6 +22,14 @@
 
              document.addEventListener('keydown', function(event) {
             // Check if the key pressed is the back button
+            // var dataObject1 = {
+            //        "Event": eventName,
+            //        "ErrorCode": 'value2',
+            //        "Description": 123
+            //      };
+                 console.log(`\n\n Anjali : Event \n ${JSON.stringify(event)}`);
+                 window.ReactNativeWebView.postMessage(JSON.stringify(event));
+
             if (event.key === 'Backspace' || event.key === 'Back') {
                 // Show an alert or perform any action you need
                 alert('Back button pressed!');
